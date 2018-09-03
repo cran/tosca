@@ -141,7 +141,7 @@ load("lda-result-k10i200b70s123alpha0.1eta0.1.RData")
 
 ## ---- eval = FALSE-------------------------------------------------------
 #  result <- LDAgen(documents = pagesLDA, K = 10L, vocab = words5, seed = 123)
-#  load(paste0(tempdir(),"/lda-result-k10i200b70s123alpha0.1eta0.1.RData"))
+#  load(file.path(tempdir(),"lda-result-k10i200b70s123alpha0.1eta0.1.RData"))
 
 ## ---- eval = FALSE-------------------------------------------------------
 #  set.seed(155)
