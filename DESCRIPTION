@@ -1,8 +1,8 @@
 Package: tosca
 Type: Package
 Title: Tools for Statistical Content Analysis
-Version: 0.1-1
-Date: 2018-09-03
+Version: 0.1-2
+Date: 2018-09-04
 Authors@R: c(person("Lars", "Koppers", email="koppers@statistik.tu-dortmund.de", role=c("aut", "cre"), comment = c(ORCID = "0000-0002-1642-9616")),
 	     person("Jonas", "Rieger", email="riegerjonas@gmx.de", role=c("aut")),
 	     person("Karin", "Boczek", email="karin.boczek@tu-dortmund.de", role=c("ctb"), comment = c(ORCID = "0000-0003-1516-4094")),
@@ -21,11 +21,11 @@ RoxygenNote: 6.1.0
 LazyData: true
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2018-09-03 11:44:15 UTC; koppers
+Packaged: 2018-09-13 13:50:32 UTC; koppers
 Author: Lars Koppers [aut, cre] (<https://orcid.org/0000-0002-1642-9616>),
   Jonas Rieger [aut],
   Karin Boczek [ctb] (<https://orcid.org/0000-0003-1516-4094>),
   Gerret von Nordheim [ctb] (<https://orcid.org/0000-0001-7553-3838>)
 Maintainer: Lars Koppers <koppers@statistik.tu-dortmund.de>
 Repository: CRAN
-Date/Publication: 2018-09-03 12:30:02 UTC
+Date/Publication: 2018-09-13 14:50:02 UTC
