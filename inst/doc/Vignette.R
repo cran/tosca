@@ -1,10 +1,13 @@
-## ---- include = TRUE, message=FALSE--------------------------------------
-devtools::install_github("DoCMA-TU/tosca")
-library(tosca)
+## ---- include = TRUE, message=FALSE, eval = FALSE------------------------
+#  devtools::install_github("DoCMA-TU/tosca")
+#  library(tosca)
 
 ## ---- eval = FALSE-------------------------------------------------------
 #  install.packages("tosca")
 #  library(tosca)
+
+## ---- include = FALSE, message=FALSE-------------------------------------
+library(tosca)
 
 ## ---- eval = FALSE-------------------------------------------------------
 #  corpus <- readWikinews()
