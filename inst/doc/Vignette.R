@@ -8,6 +8,7 @@
 
 ## ---- include = FALSE, message=FALSE-------------------------------------
 library(tosca)
+suppressWarnings(RNGversion("3.5.0"))
 
 ## ---- eval = FALSE-------------------------------------------------------
 #  corpus <- readWikinews()
