@@ -4,7 +4,7 @@
 #' \code{\link{textmeta}} object.
 #'
 #' @param path \code{character} string with path where the data files are
-#' @param file \code{character} string with names of the CVS files
+#' @param file \code{character} string with names of the CSV files
 #' @param cols \code{character} vector with columns which should be kept
 #' @param dateFormat \code{character} string with the date format in the files
 #' for \code{\link{as.Date}}
@@ -13,7 +13,7 @@
 #' @param titleCol \code{character} string with column name of the Titles
 #' @param textCol \code{character} string with column name of the Texts
 #' @param encoding character string with encoding specification of the files
-#' @param xmlAction \code{logical} whether all columns of the csv should be
+#' @param xmlAction \code{logical} whether all columns of the CSV should be
 #' handled with \code{\link{removeXML}}
 #' @param duplicateAction \code{logical}
 #' whether \code{\link{deleteAndRenameDuplicates}} should be applied to the
@@ -87,6 +87,8 @@ readTextmeta <- function(path, file, cols, dateFormat = "%Y-%m-%d", idCol = "id"
 
     # format date and rename id, date and title columns to standard
     lonefile[, dateCol] <- as.Date(lonefile[, dateCol], format = dateFormat)
+    lonefile[, idCol] <- as.character(lonefile[, idCol])
+    lonefile[, titleCol] <- as.character(lonefile[, titleCol])
     colnames(lonefile)[colnames(lonefile) == dateCol] <- "date"
     colnames(lonefile)[colnames(lonefile) == idCol] <- "id"
     colnames(lonefile)[colnames(lonefile) == titleCol] <- "title"

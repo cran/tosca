@@ -5,11 +5,11 @@
 #' package \code{\link[quanteda]{quanteda}}.
 #'
 #' @param object \code{\link{textmeta}} object
-#' @param docnames Character: string with the column of object$meta
+#' @param docnames Character: string with the column of \code{object$meta}
 #' which should be kept as \code{\link[quanteda]{docnames}}.
-#' @param docvars Character: vector with columns of object$meta which
+#' @param docvars Character: vector with columns of \code{object$meta} which
 #' should be kept as \code{\link[quanteda]{docvars}}.
-#' @param metadoc Character: vector with columns of object$meta which
+#' @param metadoc Character: vector with columns of \code{object$meta} which
 #' should be kept as \code{\link[quanteda]{metadoc}}.
 #' @param ... Additional parameters like \code{compress} for \code{\link[quanteda]{corpus}}.
 #' @return \code{\link[quanteda]{corpus}} object
@@ -47,7 +47,10 @@ as.corpus.textmeta <- function(object, docnames = "id",
   colnames(meta) <- metadoc
 
   corp <- quanteda::corpus(x = texts, docnames = id, docvars = vars, ...)
-  quanteda::metadoc(corp) <- meta
+  suppressWarnings(
+    quanteda::docvars(corp) <- 
+      cbind(quanteda::docvars(corp), quanteda::metadoc(corp))
+  )
 
   return(corp)
 }
