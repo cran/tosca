@@ -34,11 +34,15 @@
 #' @details \code{object} needs a textmeta object with strictly tokenized text component
 #' (character vectors) if you use \code{type = "words"}.
 #' If you use \code{type = "docs"} you can use a tokenized or a non-tokenized text component.
+#' In fact, you can use the textmeta constructor
+#' (\code{textmeta(meta = <your-meta-data.frame>)}) to create a textmeta object
+#' containing only the meta field and plot the resulting object.
+#' This way you can save time and memory at the first glance.
 #' @return A plot
 #' Invisible: A dataframe with columns \code{date} and \code{counts},
 #' respectively \code{proportion}
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' data(politics)
 #' poliClean <- cleanTexts(politics)
 #'

@@ -8,7 +8,6 @@ as.corpus.textmeta(
   object,
   docnames = "id",
   docvars = setdiff(colnames(object$meta), "id"),
-  metadoc = character(),
   ...
 )
 }
@@ -21,10 +20,7 @@ which should be kept as \code{\link[quanteda]{docnames}}.}
 \item{docvars}{Character: vector with columns of \code{object$meta} which
 should be kept as \code{\link[quanteda]{docvars}}.}
 
-\item{metadoc}{Character: vector with columns of \code{object$meta} which
-should be kept as \code{\link[quanteda]{metadoc}}.}
-
-\item{...}{Additional parameters like \code{compress} for \code{\link[quanteda]{corpus}}.}
+\item{...}{Additional parameters like \code{meta} or \code{compress} for \code{\link[quanteda]{corpus}}.}
 }
 \value{
 \code{\link[quanteda]{corpus}} object
@@ -47,6 +43,7 @@ obj <- textmeta(meta=data.frame(id=c("A", "B", "C", "D"),
  additionalVariable=1:4, stringsAsFactors=FALSE), text=texts)
 
 corp <- as.corpus.textmeta(obj)
-summary(corp)
+quanteda::docvars(corp)
+#quanteda::textstat_summary(corp)
 }
 \keyword{manip}
