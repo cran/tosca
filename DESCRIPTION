@@ -1,8 +1,8 @@
 Package: tosca
 Type: Package
 Title: Tools for Statistical Content Analysis
-Version: 0.3-1
-Date: 2021-04-20
+Version: 0.3-2
+Date: 2021-10-28
 Authors@R: c(person("Lars", "Koppers", email="koppers@statistik.tu-dortmund.de", role=c("aut", "cre"), comment = c(ORCID = "0000-0002-1642-9616")),
 	     person("Jonas", "Rieger", email="jonas.rieger@tu-dortmund.de", role=c("aut"), comment = c(ORCID = "0000-0002-0007-4478")),
 	     person("Karin", "Boczek", email="karin.boczek@tu-dortmund.de", role=c("ctb"), comment = c(ORCID = "0000-0003-1516-4094")),
@@ -22,11 +22,11 @@ Suggests: toscaData, testthat (>= 2.0.0), knitr (>= 1.20), devtools (>=
 RoxygenNote: 7.1.1
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2021-04-20 07:51:52 UTC; lars
+Packaged: 2021-10-28 06:09:08 UTC; lars
 Author: Lars Koppers [aut, cre] (<https://orcid.org/0000-0002-1642-9616>),
   Jonas Rieger [aut] (<https://orcid.org/0000-0002-0007-4478>),
   Karin Boczek [ctb] (<https://orcid.org/0000-0003-1516-4094>),
   Gerret von Nordheim [ctb] (<https://orcid.org/0000-0001-7553-3838>)
 Maintainer: Lars Koppers <koppers@statistik.tu-dortmund.de>
 Repository: CRAN
-Date/Publication: 2021-04-20 09:50:02 UTC
+Date/Publication: 2021-10-28 13:40:02 UTC

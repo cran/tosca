@@ -1,4 +1,4 @@
-9a7c935039b4dcc5393ca86b165a9a3a *DESCRIPTION
+30f134e6edcc52466f4da448cd4830dd *DESCRIPTION
 28aebe66af3ad3eb0bddbe05bf44a60a *NAMESPACE
 3f2d2b3439b6289e086d358daf88f149 *R/LDAgen.R
 3716c0662e3fdb0dc4b3245f2f662bb6 *R/LDAprep.R
@@ -41,11 +41,11 @@ d5e9355a838193c2f5966a02c91999d4 *R/topTexts.R
 0dc5b6f4b940c3e5b19a0d7fd859cfb8 *R/topWords.R
 ccbd29163f2112c5e046466a6f86f63a *R/topicCoherence.R
 b53db692d2b0cf18dff6b9d69b16a8ab *R/topicsInText.R
-f0e4c8da7420b4d72bdfeb7175ea7dea *build/vignette.rds
+5570d158856a3618b8153ebb8c6088c6 *build/vignette.rds
 a59ee25db4bd5a3a431c754837ba6d30 *inst/CITATION
 62b4cfb0af5b08e5da00695c920c00a0 *inst/doc/Vignette.R
 48e6d6825becaba226cd099d189a0098 *inst/doc/Vignette.Rmd
-2e173ff8e2c0e9263eeb4239c401eef6 *inst/doc/Vignette.pdf
+f314657436d4784bb7e8d20f2319430c *inst/doc/Vignette.pdf
 4352268a6235dd91d984c79f85b2ceaa *man/LDAgen.Rd
 15b82706b17c2e69c8520491041ed504 *man/LDAprep.Rd
 ea1aba4dcae85a9a2762ac846d6178cc *man/as.corpus.textmeta.Rd
@@ -135,7 +135,7 @@ b1975647d0c22e39d55e34f1a0657a7f *tests/testthat/test_plotWordSub.R
 994ae297472b2459a77700f1fc32fdc5 *tests/testthat/test_precisionrecall.R
 dd2e36e90069f322239b52e3b471c2e2 *tests/testthat/test_readTextmeta.R
 0e746c8ebe3101509462daec60601c66 *tests/testthat/test_readWhatsApp.R
-624bf19ab2e2642c4b314fe194930f25 *tests/testthat/test_readWiki.R
+947a03e6422dfcccb1a3797d9639f590 *tests/testthat/test_readWiki.R
 e35f6545761764e03d0d3385777f2b81 *tests/testthat/test_readWikinews.R
 511158d19212834610f9453b22e27621 *tests/testthat/test_removeXML.R
 e6eaf8a215d4f70428f18569a2f5d0a4 *tests/testthat/test_sampling.R
